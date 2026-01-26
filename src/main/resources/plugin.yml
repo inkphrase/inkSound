@@ -1,0 +1,53 @@
+name: inkSound
+version: '1.0-SNAPSHOT'
+main: Ink_server.InkSound
+api-version: '1.21'
+commands:
+  plgive:
+    description: 获取盘灵物品
+    permission: ink.admin
+  plinfo:
+    permission: ink.test
+    description: 查询玩家的信息；其中设置类命令仅ink.admin可使用
+  clearpdc:
+    permission: ink.admin
+    description: 清空玩家的PDC
+  pdcget:
+    permission: ink.test
+    description: 查询玩家的PDC
+  pldata:
+    permission: ink.test
+    description: 查询玩家的战斗数据
+  itemdata:
+    permission: ink.test
+    description: 查询手持物品的数据
+  plopen:
+    permission: ink.admin
+    description: 打开玩家或府邸仓库
+  plspawn:
+    permission: ink.admin
+    description: 生成怪物
+
+permissions:
+  ink.test:
+    description: 允许使用调试指令
+    default: op
+  ink.admin:
+    description: InkSound服务器管理者
+    default: op
+  plgive:
+    default: op
+  plinfo:
+    default: op
+  clearpdc:
+    default: op
+  pdcget:
+    default: op
+  pldata:
+    default: op
+  itemdata:
+    default: op
+  plopen:
+    default: op
+  plspawn:
+    default: op

@@ -1,0 +1,1551 @@
+{
+  "materials": {
+    "weaponmetal2": {
+      "material": "RAW_IRON",
+      "name": "§a青钢砂",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o闪烁着青色光泽的金属粉末",
+        "§7§o可塑性强，适合制作二阶武器"
+      ]
+    },
+    "armorcore2": {
+      "material": "RAW_GOLD",
+      "name": "§a二阶装备原核",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o稀有的装备核心",
+        "§7§o可以制作二阶防具"
+      ]
+    },
+    "east.weaponforge.2": {
+      "material": "diamond",
+      "model": "materials/weaponforge.2",
+      "name": "§a二阶武器锻核[森林]",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o经过加工的武器锻核",
+        "§7§o适合用作锻造二阶武器"
+      ]
+    },
+    "east.armorforge.2": {
+      "material": "diamond",
+      "model": "materials/armorforge.2",
+      "name": "§a二阶防具锻核[森林]",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o经过加工的防具锻核",
+        "§7§o适合用作锻造二阶防具"
+      ]
+    },
+    "east.magicforge.2": {
+      "material": "diamond",
+      "model": "materials/magicforge.2",
+      "name": "§a二阶法宝锻核[森林]",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o经过加工的法宝锻核",
+        "§7§o适合用作锻造二阶法宝"
+      ]
+    },
+    "south.weaponforge.2": {
+      "material": "diamond",
+      "model": "materials/weaponforge.2",
+      "name": "§a二阶武器锻核[沙漠]",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o经过加工的武器锻核",
+        "§7§o适合用作锻造二阶武器"
+      ]
+    },
+    "south.armorforge.2": {
+      "material": "diamond",
+      "model": "materials/armorforge.2",
+      "name": "§a二阶防具锻核[沙漠]",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o经过加工的防具锻核",
+        "§7§o适合用作锻造二阶防具"
+      ]
+    },
+    "south.magicforge.2": {
+      "material": "diamond",
+      "model": "materials/magicforge.2",
+      "name": "§a二阶法宝锻核[沙漠]",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o经过加工的法宝锻核",
+        "§7§o适合用作锻造二阶法宝"
+      ]
+    },
+    "west.weaponforge.2": {
+      "material": "diamond",
+      "model": "materials/weaponforge.2",
+      "name": "§a二阶武器锻核[雪山]",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o经过加工的武器锻核",
+        "§7§o适合用作锻造二阶武器"
+      ]
+    },
+    "west.armorforge.2": {
+      "material": "diamond",
+      "model": "materials/armorforge.2",
+      "name": "§a二阶防具锻核[雪山]",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o经过加工的防具锻核",
+        "§7§o适合用作锻造二阶防具"
+      ]
+    },
+    "west.magicforge.2": {
+      "material": "diamond",
+      "model": "materials/magicforge.2",
+      "name": "§a二阶法宝锻核[雪山]",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o经过加工的法宝锻核",
+        "§7§o适合用作锻造二阶法宝"
+      ]
+    },
+    "north.weaponforge.2": {
+      "material": "diamond",
+      "model": "materials/weaponforge.2",
+      "name": "§a二阶武器锻核[湖泊]",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o经过加工的武器锻核",
+        "§7§o适合用作锻造二阶武器"
+      ]
+    },
+    "north.armorforge.2": {
+      "material": "diamond",
+      "model": "materials/armorforge.2",
+      "name": "§a二阶防具锻核[湖泊]",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o经过加工的防具锻核",
+        "§7§o适合用作锻造二阶防具"
+      ]
+    },
+    "north.magicforge.2": {
+      "material": "diamond",
+      "model": "materials/magicforge.2",
+      "name": "§a二阶法宝锻核[湖泊]",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o经过加工的法宝锻核",
+        "§7§o适合用作锻造二阶法宝"
+      ]
+    },
+    "east.zombiecore.2": {
+      "material": "copper_nugget",
+      "name": "§a腐尸结晶",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o被魔气侵染的妖族内丹",
+        "§7§o原本蕴含的自然灵力已扭曲成魔化妖气"
+      ]
+    },
+    "east.bone.2": {
+      "material": "Bone",
+      "name": "§a硬骨",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o被魔气侵染的妖族骨骼",
+        "§7§o散发的邪气令人胆寒"
+      ]
+    },
+    "east.line.2": {
+      "material": "String",
+      "name": "§a蛛丝",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o蛛妖所生产的丝线",
+        "§7§o受魔气侵染后韧性有所提升"
+      ]
+    },
+    "east.cloth.2": {
+      "material": "leather",
+      "name": "§a破布",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o魔化妖族穿着的粗布皮",
+        "§7§o已经有些破损，但足够结实"
+      ]
+    },
+    "east.crystalbone.2": {
+      "material": "amethyst_shard",
+      "name": "§a晶化骨",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o呈水晶状的坚硬臂骨",
+        "§7§o其中纠缠着自然灵力与魔化妖气"
+      ]
+    },
+    "east.crystalclaw.2": {
+      "material": "RABBIT_FOOT",
+      "name": "§a寒骨爪",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o散发寒气的妖魔骨爪",
+        "§7§o残留的自然灵力闪烁着晶莹"
+      ]
+    },
+    "south.goldsand.2": {
+      "material": "Gold_Nugget",
+      "name": "§a金砂",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o炎砂大漠中的零散金砂",
+        "§7§o马贼团曾大规模开采"
+      ]
+    },
+    "south.line.2": {
+      "material": "String",
+      "name": "§a蚕丝",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o在马贼身上搜刮到的精致丝线",
+        "§7§o据说在皇城有相当大的市场"
+      ]
+    },
+    "south.iron.2": {
+      "material": "Iron_Nugget",
+      "name": "§a精铁",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o炎砂大漠的重要矿产",
+        "§7§o矿脉已被马贼团霸占，售价居高不下"
+      ]
+    },
+    "south.cloth.2": {
+      "material": "Leather",
+      "name": "绸缎",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o沙漠商人销往皇城的精致布料",
+        "§7§o马贼祸乱后，供应量大幅减少"
+      ]
+    },
+    "south.redcrystal.2": {
+      "material": "redstone",
+      "name": "§a红宝石",
+      "lore": [
+      "§a稀有度:★★",
+      "§7§o马贼团所抢夺的红色宝石",
+      "§7§o散发着温热的灵力"
+      ]
+    },
+    "south.bluecrystal.2": {
+      "material": "lapis_lazuli",
+      "name": "§a蓝宝石",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o马贼团所抢夺的蓝色宝石",
+        "§7§o散发着清冷的灵力"
+      ]
+    },
+    "west.gold.2": {
+      "material": "Gold_Nugget",
+      "name": "§a金矿",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o黑市团伙偷挖的金矿",
+        "§7§o曾是虎爪山脉的重要特产"
+      ]
+    },
+    "west.herbal.2": {
+      "material": "kelp",
+      "name": "§a草药",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o黑市团伙偷采的药草",
+        "§7§o具有极高的药用价值"
+      ]
+    },
+    "west.cloth.2": {
+      "material": "leather",
+      "name": "§a兽皮",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o黑市团伙豢养鬼兽的毛皮",
+        "§7§o材质坚韧，适合制作简易的皮具"
+      ]
+    },
+    "west.line.2": {
+      "material": "string",
+      "name": "§a黑血线",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o黑市成员在脉搏处缝上的黑线",
+        "§7§o浸满了血液，似乎是一种操纵手段"
+      ]
+    },
+    "west.slavebead.2": {
+      "material": "emerald",
+      "name": "§a鬼役丹",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o黑市头目身上搜刮的黑色丹珠",
+        "§7§o似乎可以控制其他黑市成员"
+      ]
+    },
+    "west.bloodbead.2": {
+      "material": "emerald",
+      "name": "§a狂血珠",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o黑市头目身上搜刮的血色丹珠",
+        "§7§o狂暴状态就是用其引动的"
+      ]
+    },
+    "north.arrow.2": {
+      "material": "flint",
+      "name": "§a妖影箭",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o缠绕着玄水灵气的箭矢",
+        "§7§o有着调动水元素的能力"
+      ]
+    },
+    "north.shell.2": {
+      "material": "shulker_shell",
+      "name": "§a玄甲壳",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o碧色的晶莹甲壳",
+        "§7§o其上的玄水灵气提供了更强的防御力"
+      ]
+    },
+    "north.bead.2": {
+      "material": "emerald",
+      "name": "§a玄灵珠",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o散发着温润灵气的蓝色珍珠",
+        "§7§o可以当作施法媒介"
+      ]
+    },
+    "north.line.2": {
+      "material": "string",
+      "name": "§a玄水线",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o玄水灵气所编织的丝线",
+        "§7§o赋予了玄水生物水元素相性"
+      ]
+    },
+    "north.eye.2": {
+      "material": "heart_of_the_sea",
+      "name": "§a望天瞳",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o千里神射手的蓝色眼瞳",
+        "§7§o似乎可以望穿天际"
+      ]
+    },
+    "north.magaline.2": {
+      "material": "string",
+      "name": "§a贯云弦",
+      "lore": [
+        "§a稀有度:★★",
+        "§7§o千里神射手所使用的弓弦",
+        "§7§o可以令箭矢贯穿云雾"
+      ]
+    },
+    "weaponmetal3": {
+      "material": "RAW_IRON",
+      "name": "§9赤铜锭",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o温度极高的赤色金属",
+        "§7§o可塑性强，适合制作三阶武器"
+      ]
+    },
+    "armorcore3": {
+      "material": "RAW_GOLD",
+      "name": "§9三阶装备原核",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o稀有的装备核心",
+        "§7§o可以制作三阶防具"
+      ]
+    },
+    "east.weaponforge.3": {
+      "material": "diamond",
+      "model": "materials/weaponforge.3",
+      "name": "§9三阶武器锻核[森林]",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o经过加工的武器锻核",
+        "§7§o适合用作锻造三阶武器"
+      ]
+    },
+    "east.armorforge.3": {
+      "material": "diamond",
+      "model": "materials/armorforge.3",
+      "name": "§9三阶防具锻核[森林]",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o经过加工的防具锻核",
+        "§7§o适合用作锻造三阶防具"
+      ]
+    },
+    "east.magicforge.3": {
+      "material": "diamond",
+      "model": "materials/magicforge.3",
+      "name": "§9三阶法宝锻核[森林]",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o经过加工的法宝锻核",
+        "§7§o适合用作锻造三阶法宝"
+      ]
+    },
+    "south.weaponforge.3": {
+      "material": "diamond",
+      "model": "materials/weaponforge.3",
+      "name": "§9三阶武器锻核[沙漠]",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o经过加工的武器锻核",
+        "§7§o适合用作锻造三阶武器"
+      ]
+    },
+    "south.armorforge.3": {
+      "material": "diamond",
+      "model": "materials/armorforge.3",
+      "name": "§9三阶防具锻核[沙漠]",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o经过加工的防具锻核",
+        "§7§o适合用作锻造三阶防具"
+      ]
+    },
+    "south.magicforge.3": {
+      "material": "diamond",
+      "model": "materials/magicforge.3",
+      "name": "§9三阶法宝锻核[沙漠]",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o经过加工的法宝锻核",
+        "§7§o适合用作锻造三阶法宝"
+      ]
+    },
+    "west.weaponforge.3": {
+      "material": "diamond",
+      "model": "materials/weaponforge.3",
+      "name": "§9三阶武器锻核[雪山]",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o经过加工的武器锻核",
+        "§7§o适合用作锻造三阶武器"
+      ]
+    },
+    "west.armorforge.3": {
+      "material": "diamond",
+      "model": "materials/armorforge.3",
+      "name": "§9三阶防具锻核[雪山]",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o经过加工的防具锻核",
+        "§7§o适合用作锻造三阶防具"
+      ]
+    },
+    "west.magicforge.3": {
+      "material": "diamond",
+      "model": "materials/magicforge.3",
+      "name": "§9三阶法宝锻核[雪山]",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o经过加工的法宝锻核",
+        "§7§o适合用作锻造三阶法宝"
+      ]
+    },
+    "north.weaponforge.3": {
+      "material": "diamond",
+      "model": "materials/weaponforge.3",
+      "name": "§9三阶武器锻核[湖泊]",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o经过加工的武器锻核",
+        "§7§o适合用作锻造三阶武器"
+      ]
+    },
+    "north.armorforge.3": {
+      "material": "diamond",
+      "model": "materials/armorforge.3",
+      "name": "§9三阶防具锻核[湖泊]",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o经过加工的防具锻核",
+        "§7§o适合用作锻造三阶防具"
+      ]
+    },
+    "north.magicforge.3": {
+      "material": "diamond",
+      "model": "materials/magicforge.3",
+      "name": "§9三阶法宝锻核[湖泊]",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o经过加工的法宝锻核",
+        "§7§o适合用作锻造三阶法宝"
+      ]
+    },
+    "east.cloth.3": {
+      "material": "leather",
+      "name": "§9裹尸布",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o被灵力与尸气共同感染的布料",
+        "§7§o质地与法术相性都变得极佳"
+      ]
+    },
+    "east.wood.3": {
+      "material": "oak_log",
+      "name": "§9妖灵木",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o散发妖气的木材",
+        "§7§o其上的纹路闪烁着青色光晕"
+      ]
+    },
+    "east.bone.3": {
+      "material": "bone",
+      "name": "§9缠须骨",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o缠绕着木须的骨头",
+        "§7§o木须模拟了肌肉的结构与功能"
+      ]
+    },
+    "east.marrow.3": {
+      "material": "honeycomb",
+      "name": "§9汲灵髓",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o吸收了森林灵气的木妖骨髓",
+        "§7§o呈青色粘稠状，蕴含极高的生命能量"
+      ]
+    },
+    "east.bamboo.3": {
+      "material": "bamboo",
+      "name": "§9韧竹节",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o食铁兽钟爱植物",
+        "§7§o缠绕着森林灵气，坚硬且富有韧性"
+      ]
+    },
+    "east.claw.3": {
+      "material": "RABBIT_FOOT",
+      "name": "§9斩棘爪",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o食铁兽尖锐的利爪",
+        "§7§o可以轻松切断金属器具"
+      ]
+    },
+    "east.slip.3": {
+      "material": "paper",
+      "name": "§9织咒简",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o写有巫师咒文的竹简",
+        "§7§o字迹仿佛在诱人阅读"
+      ]
+    },
+    "east.crystal.3":{
+      "material": "amethyst_shard",
+      "name": "§9树灵晶",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o刻有树木纹路青色的水晶",
+        "§7§o树妖巫师的法力就来自于此"
+      ]
+    },
+    "south.spike.3": {
+      "material": "prismarine_shard",
+      "name": "§9精怪蛰刺",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o刺豚的尖刺",
+        "§7§o在水阵法的影响下变得更加锋利"
+      ]
+    },
+    "south.shell.3": {
+      "material": "shulker_shell",
+      "name": "§9焦炎甲壳",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o灵虫的甲壳",
+        "§7§o在火阵法的影响下变得焦黑且更加坚硬"
+      ]
+    },
+    "south.stone.3": {
+      "material": "stone",
+      "name": "§9阵基石",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o稳固千思谷阵法的灵石",
+        "§7§o具有融合水火阵法灵力的作用"
+      ]
+    },
+    "south.bead.3": {
+      "material": "emerald",
+      "name": "§9阵灵核",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o千思谷阵眼的核心",
+        "§7§o可以调用大量水火阵法灵力"
+      ]
+    },
+    "south.fin.3": {
+      "material": "glow_ink_sac",
+      "name": "§9幽蓝妖鳍",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o海妖的鱼鳍",
+        "§7§o在水阵法的影响下变得更加坚韧"
+      ]
+    },
+    "south.bone.3": {
+      "material": "bone",
+      "name": "§9灰烬焦骨",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o焦尸的骨头",
+        "§7§o在火阵法的影响下变得焦黑且灼热"
+      ]
+    },
+    "south.firecore.3": {
+      "material": "amethyst_shard",
+      "name": "§9阵法石核心[火]",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o千思谷火阵法的灵气核心",
+        "§7§o可以调动狂暴的火属性灵力"
+      ]
+    },
+    "south.watercore.3": {
+      "material": "amethyst_shard",
+      "name": "§9阵法石核心[水]",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o千思谷水阵法的灵气核心",
+        "§7§o可以调动浩瀚的水属性灵力"
+      ]
+    },
+    "west.goldsand.3": {
+      "material": "Gold_Nugget",
+      "name": "§9怨念金砂",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o缠绕着亡魂怨念的金矿石",
+        "§7§o其上可怖的怨气有极强的咒术潜力"
+      ]
+    },
+    "west.goldmetal.3": {
+      "material": "gold_ingot",
+      "name": "§9亡蚀虎金",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o虎爪山脉蕴藏的极品金矿",
+        "§7§o被亡魂的尸气侵蚀，棱角变得锋利且致命"
+      ]
+    },
+    "west.marrow.3": {
+      "material": "honeycomb",
+      "name": "§9幽魂骨髓",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o凝聚在骨骼内部的液态死气",
+        "§7§o似乎是鬼影的能力来源"
+      ]
+    },
+    "west.cloth.3": {
+      "material": "feather",
+      "name": "§9冷彻箭羽",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o鬼影所使用箭矢的阴寒箭羽",
+        "§7§o散发着可以撕裂山石的寒气"
+      ]
+    },
+    "west.line.3": {
+      "material": "string",
+      "name": "§9冤魂丝线",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o毒蛛所吐的紫黑色丝线",
+        "§7§o似乎是其吞噬的冤魂编织而成"
+      ]
+    },
+    "west.tooth.3": {
+      "material": "armadillo_scute",
+      "name": "§9噬魂鳌牙",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o毒蛛可怖的怪牙",
+        "§7§o可以透过肉体毒伤灵魂"
+      ]
+    },
+    "west.bone.3": {
+      "material": "bone",
+      "name": "§9凝怨焦骨",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o焦骨战士燃烧着阴火臂骨",
+        "§7§o缠绕的死气令其冰冷阴森"
+      ]
+    },
+    "west.finger.3": {
+      "material": "bone",
+      "name": "§9摄魂指节",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o焦骨战士尖锐的指骨",
+        "§7§o其摄取的魂魄将会转化为缠身的死气"
+      ]
+    },
+    "north.blade.3": {
+      "material": "iron_ingot",
+      "name": "§9斩魂剑刃",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o金乌教徒所冶炼的金属剑刃",
+        "§7§o其上的金色纹路能斩断魂魄"
+      ]
+    },
+    "north.bone.3": {
+      "material": "bone",
+      "name": "§9金纹朽骨",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o金乌教徒刻有金色纹路的骨骼",
+        "§7§o教徒可凭借它借用金乌妖力"
+      ]
+    },
+    "north.cloth.3": {
+      "material": "feather",
+      "name": "§9妖翎箭羽",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o金乌教徒所使用的燃烧箭羽",
+        "§7§o能听到轻微的爆破声，仿佛空气都被引燃"
+      ]
+    },
+    "north.line.3": {
+      "material": "string",
+      "name": "§9妖魂弓弦",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o金乌教徒所编织的烈焰弓弦",
+        "§7§o散发着耀眼的光辉，仿佛在灼烧灵魂"
+      ]
+    },
+    "north.lancer.3": {
+      "material": "iron_ingot",
+      "name": "§9穿魂枪尖",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o金乌教徒所冶炼的金属枪刃",
+        "§7§o其上的金色寒芒能穿透灵魂"
+      ]
+    },
+    "north.bead.3": {
+      "material": "emerald",
+      "name": "§9金焰纹章",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o金乌教徒镶嵌在武器上的金色徽章",
+        "§7§o燃烧着如同日晖的灵魂火焰"
+      ]
+    },
+    "north.goldfeather.3": {
+      "material": "feather",
+      "name": "§9妖鸟金翎",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o金乌成长时脱落的翎羽",
+        "§7§o每一根羽毛都燃烧着不灭的烈焰"
+      ]
+    },
+    "north.goldeye.3": {
+      "material": "heart_of_the_sea",
+      "name": "§9烈日金瞳",
+      "lore": [
+        "§9稀有度:★★★",
+        "§7§o凝聚着金乌烈焰的眼瞳",
+        "§7§o磅礴的妖力仿佛来自高悬的烈日"
+      ]
+    },
+    "weaponmetal4": {
+      "material": "RAW_IRON",
+      "name": "§d玄铁锭",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o清冷锋利的玄色金属",
+        "§7§o可塑性强，适合制作四阶武器"
+      ]
+    },
+    "armorcore4": {
+      "material": "RAW_GOLD",
+      "name": "§d四阶装备原核",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o稀有的装备核心",
+        "§7§o可以制作四阶防具"
+      ]
+    },
+    "east.weaponforge.4": {
+      "material": "diamond",
+      "model": "materials/weaponforge.4",
+      "name": "§d四阶武器锻核[森林]",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o经过加工的武器锻核",
+        "§7§o适合用作锻造四阶武器"
+      ]
+    },
+    "east.armorforge.4": {
+      "material": "diamond",
+      "model": "materials/armorforge.4",
+      "name": "§d四阶防具锻核[森林]",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o经过加工的防具锻核",
+        "§7§o适合用作锻造四阶防具"
+      ]
+    },
+    "east.magicforge.4": {
+      "material": "diamond",
+      "model": "materials/magicforge.4",
+      "name": "§d四阶法宝锻核[森林]",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o经过加工的法宝锻核",
+        "§7§o适合用作锻造四阶法宝"
+      ]
+    },
+    "south.weaponforge.4": {
+      "material": "diamond",
+      "model": "materials/weaponforge.4",
+      "name": "§d四阶武器锻核[沙漠]",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o经过加工的武器锻核",
+        "§7§o适合用作锻造四阶武器"
+      ]
+    },
+    "south.armorforge.4": {
+      "material": "diamond",
+      "model": "materials/armorforge.4",
+      "name": "§d四阶防具锻核[沙漠]",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o经过加工的防具锻核",
+        "§7§o适合用作锻造四阶防具"
+      ]
+    },
+    "south.magicforge.4": {
+      "material": "diamond",
+      "model": "materials/magicforge.4",
+      "name": "§d四阶法宝锻核[沙漠]",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o经过加工的法宝锻核",
+        "§7§o适合用作锻造四阶法宝"
+      ]
+    },
+    "west.weaponforge.4": {
+      "material": "diamond",
+      "model": "materials/weaponforge.4",
+      "name": "§d四阶武器锻核[雪山]",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o经过加工的武器锻核",
+        "§7§o适合用作锻造四阶武器"
+      ]
+    },
+    "west.armorforge.4": {
+      "material": "diamond",
+      "model": "materials/armorforge.4",
+      "name": "§d四阶防具锻核[雪山]",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o经过加工的防具锻核",
+        "§7§o适合用作锻造四阶防具"
+      ]
+    },
+    "west.magicforge.4": {
+      "material": "diamond",
+      "model": "materials/magicforge.4",
+      "name": "§d四阶法宝锻核[雪山]",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o经过加工的法宝锻核",
+        "§7§o适合用作锻造四阶法宝"
+      ]
+    },
+    "north.weaponforge.4": {
+      "material": "diamond",
+      "model": "materials/weaponforge.4",
+      "name": "§d四阶武器锻核[湖泊]",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o经过加工的武器锻核",
+        "§7§o适合用作锻造四阶武器"
+      ]
+    },
+    "north.armorforge.4": {
+      "material": "diamond",
+      "model": "materials/armorforge.4",
+      "name": "§d四阶防具锻核[湖泊]",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o经过加工的防具锻核",
+        "§7§o适合用作锻造四阶防具"
+      ]
+    },
+    "north.magicforge.4": {
+      "material": "diamond",
+      "model": "materials/magicforge.4",
+      "name": "§d四阶法宝锻核[湖泊]",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o经过加工的法宝锻核",
+        "§7§o适合用作锻造四阶法宝"
+      ]
+    },
+    "east.bugtooth.4": {
+      "material": "armadillo_scute",
+      "name": "§d噬生尖牙",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o吞噬灵植生命力的尖牙",
+        "§7§o似乎被其划破就会失去所有生命力"
+      ]
+    },
+    "east.extract.4": {
+      "material": "dragon_breath",
+      "name": "§d狂萃精华",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o啮根虫存储灵力的腺体中所提取的精华液",
+        "§7§o蕴含极高浓度的生命灵力，能为金属赋予活力"
+      ]
+    },
+    "east.bead.4": {
+      "material": "emerald",
+      "name": "§d青纹内丹",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o吸收了大量生命灵气的内丹",
+        "§7§o其上青色的纹路可以调动周围的草木灵力"
+      ]
+    },
+    "east.bone.4": {
+      "material": "bone",
+      "name": "§d复生根骨",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o灵尸虬结一体的筋脉与骨骼",
+        "§7§o磅礴的生命灵力赋予其再生的能力"
+      ]
+    },
+    "east.spidertooth.4": {
+      "material": "armadillo_scute",
+      "name": "§d剧毒虬齿",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o毒蛛巨大而扭曲的牙齿",
+        "§7§o其分泌的毒液会腐蚀生命灵力"
+      ]
+    },
+    "east.spike.4": {
+      "material": "prismarine_shard",
+      "name": "§d裂骨棘刺",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o毒蛛腿上锋利的棘刺",
+        "§7§o其伸出的无数倒刺能轻松刺破骨骼"
+      ]
+    },
+    "east.eye.4": {
+      "material": "heart_of_the_sea",
+      "name": "§d森灵复眼",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o蜘蛛女王的复眼",
+        "§7§o透过它能够看穿生命灵力的脉络"
+      ]
+    },
+    "east.shell.4": {
+      "material": "shulker_shell",
+      "name": "§d蛛王坚壳",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o蜘蛛女王的坚硬的外甲壳",
+        "§7§o内部分布着复杂的灵力脉络，能够抵御并吸收强大的攻击"
+      ]
+    },
+    "east.amber.4": {
+      "material": "amethyst_shard",
+      "name": "§d龙纹树晶",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o千年灵树中埋藏的水晶",
+        "§7§o内有青龙纹路，蕴含强大的法力"
+      ]
+    },
+    "east.vine.4": {
+      "material": "fern",
+      "name": "§d天青藤",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o千年灵树上缠绕的藤蔓",
+        "§7§o受其千年灵力的影响，极为坚韧"
+      ]
+    },
+    "south.fire.4": {
+      "material": "blaze_powder",
+      "name": "§d燃心魔火",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o焰魔的生命之火",
+        "§7§o常年吸收火山灵力，可燃烧千年"
+      ]
+    },
+    "south.rod.4": {
+      "material": "blaze_rod",
+      "name": "§d燃躯火臂",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o环绕焰魔周身的火柱",
+        "§7§o受魔火影响，其上燃烧的火焰难以熄灭"
+      ]
+    },
+    "south.arm.4": {
+      "material": "gold_ingot",
+      "name": "§d炎金臂铠",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o兽人右臂的特制铠甲",
+        "§7§o能够驾驭狂暴的火山灵力以强化攻击"
+      ]
+    },
+    "south.axe.4": {
+      "material": "gold_ingot",
+      "name": "§d熔金斧刃",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o兽人巨斧的沉重斧刃",
+        "§7§o其逸散的狂暴气息让人望而生畏"
+      ]
+    },
+    "south.core.4": {
+      "material": "amethyst_shard",
+      "name": "§d燃烬魔核",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o魔像的力量核心",
+        "§7§o似乎是焚烧为灰烬的沙石糅合而成的"
+      ]
+    },
+    "south.body.4": {
+      "material": "copper_golem_statue",
+      "name": "§d灰烬躯壳",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o魔像失去力量后留下的躯壳",
+        "§7§o依然保留着强大的防御力"
+      ]
+    },
+    "south.devilmud.4": {
+      "material": "slime_block",
+      "name": "§d太岁土",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o剥离下的凶神太岁身躯",
+        "§7§o即使脱离了本体，也依然像是活物"
+      ]
+    },
+    "south.devilshell.4": {
+      "material": "shulker_shell",
+      "name": "§d凶神壳",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o凶神太岁的外层坚壳",
+        "§7§o坚硬无比，可以轻易凿穿山体岩石"
+      ]
+    },
+    "south.devilbead.4": {
+      "material": "emerald",
+      "name": "§d古尸妖丹",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o旱魃古尸保存千年的尸丹",
+        "§7§o压制着躁动的死气与烈焰，似乎要将大漠焚尽"
+      ]
+    },
+    "south.devilnail.4": {
+      "material": "netherite_ingot",
+      "name": "§d邪祟骨钉",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o旱魃古尸头颅上的骨钉",
+        "§7§o吸收了千年尸气，仿佛要将大漠吞食"
+      ]
+    },
+    "west.claw.4": {
+      "material": "RABBIT_FOOT",
+      "name": "§d坚冰利爪",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o覆盖着坚冰的魔熊爪",
+        "§7§o妖力与冰晶融合，拥有极强的破坏力"
+      ]
+    },
+    "west.cloth.4": {
+      "material": "leather",
+      "name": "§d白熊毛皮",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o魔熊的坚韧毛皮",
+        "§7§o毛发上凝结着冰晶，昭示着其强大的反击能力"
+      ]
+    },
+    "west.iron.4": {
+      "material": "flint",
+      "name": "§d寒芒晶铁",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o凝固着六棱冰晶的金属",
+        "§7§o能够刺穿骨髓，冻结灵魂"
+      ]
+    },
+    "west.bone.4": {
+      "material": "bone",
+      "name": "§d严寒冻骨",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o寒天射手覆盖冰晶的骨骼",
+        "§7§o在极地严寒的影响下，变得极为坚固冰寒"
+      ]
+    },
+    "west.eye.4": {
+      "material": "heart_of_the_sea",
+      "name": "§d惑心魔眼",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o鬼影用于蛊惑灵魂的魔眼",
+        "§7§o仿佛看着它就会陷入严寒与恐惧"
+      ]
+    },
+    "west.body.4": {
+      "material": "copper_golem_statue",
+      "name": "§d幽影残躯",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o鬼魂消散后留下的残躯",
+        "§7§o难以想象如此瘦弱的身躯能爆发出令人胆寒的速度"
+      ]
+    },
+    "west.crystal.4": {
+      "material": "amethyst_shard",
+      "name": "§d埋雪魂晶",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o幽魂的灵魂结晶",
+        "§7§o拥有能将空气冻结的可怕魔力"
+      ]
+    },
+    "west.core.4": {
+      "material": "amethyst_shard",
+      "name": "§d聚风魂核",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o幽魂的力量核心",
+        "§7§o拥有引动聚风的可怕魔力"
+      ]
+    },
+    "west.wing.4": {
+      "material": "phantom_membrane",
+      "name": "§d幽怨幻羽",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o幽翼翅膀上最璀璨的羽毛",
+        "§7§o能够扭曲光线，隐匿自身"
+      ]
+    },
+    "west.spike.4": {
+      "material": "prismarine_shard",
+      "name": "§d寒晶尾刺",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o幽翼尾骨上的尖刺",
+        "§7§o凝聚了雪山的极寒灵力，能够冻结刺中的敌人"
+      ]
+    },
+    "north.cloth.4": {
+      "material": "leather",
+      "name": "§d缠怨衣冢",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o幽魂身穿的衣物",
+        "§7§o似乎是哪座墓葬中的衣冠冢"
+      ]
+    },
+    "north.fire.4": {
+      "material": "emerald",
+      "name": "§d怨念魂火",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o融合了大量幽魂的阴火",
+        "§7§o靠近时可以听到若有若无的嚎哭"
+      ]
+    },
+    "north.bone.4": {
+      "material": "bone",
+      "name": "§d阴冷幽骨",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o墓园里的阴森白骨",
+        "§7§o鬼影似乎钟爱把它当作凶器"
+      ]
+    },
+    "north.claw.4": {
+      "material": "RABBIT_FOOT",
+      "name": "§d阴森鬼爪",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o鬼影的恐怖手爪",
+        "§7§o看一眼就会产生头颅被抓握的恐怖幻觉"
+      ]
+    },
+    "north.mud.4": {
+      "material": "slime_block",
+      "name": "§d腐生息壤",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o扭曲增殖的活体土壤",
+        "§7§o一旦触碰就会被缠绕寄生"
+      ]
+    },
+    "north.dirt.4": {
+      "material": "dirt",
+      "name": "§d浸血尘土",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o血色可怖的土壤",
+        "§7§o似乎是在主动吸收墓葬中尸体的血液"
+      ]
+    },
+    "north.feeler.4": {
+      "material": "sculk_vein",
+      "name": "§d煞魂触角",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o丧魔头颅生长的触角",
+        "§7§o似乎可以感知到灵魂的波动"
+      ]
+    },
+    "north.heart.4": {
+      "material": "echo_shard",
+      "name": "§d幽冥心骸",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o丧魔被骸骨包裹的心脏",
+        "§7§o即使脱离身躯也依然在跳动"
+      ]
+    },
+    "north.tooth.4": {
+      "material": "echo_shard",
+      "name": "§d汲魂獠牙",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o鬼彘尖锐的獠牙",
+        "§7§o被其贯穿的生物将被汲取灵魂"
+      ]
+    },
+    "north.soulbone.4": {
+      "material": "bone",
+      "name": "§d囚魂骇骨",
+      "lore": [
+        "§d稀有度:★★★★",
+        "§7§o鬼彘暴露在体外的肋骨",
+        "§7§o獠牙所汲取的灵魂将被囚禁于此"
+      ]
+    },
+
+    "weaponmetal5": {
+      "material": "RAW_IRON",
+      "name": "§e灵玉简",
+      "lore": [
+        "§e稀有度:★★★★★",
+        "§7§o晶莹剔透的玉质书简",
+        "§7§o灵力深厚，适合制作五阶武器"
+      ]
+    },
+    "armorcore5": {
+      "material": "RAW_GOLD",
+      "name": "§e五阶装备原核",
+      "lore": [
+        "§e稀有度:★★★★★",
+        "§7§o稀有的装备核心",
+        "§7§o可以制作五阶防具"
+      ]
+    },
+    "east.weaponforge.5": {
+      "material": "diamond",
+      "model": "materials/weaponforge.5",
+      "name": "§e五阶武器锻核[森林]",
+      "lore": [
+        "§e稀有度:★★★★★",
+        "§7§o经过加工的武器锻核",
+        "§7§o适合用作锻造五阶武器"
+      ]
+    },
+    "east.armorforge.5": {
+      "material": "diamond",
+      "model": "materials/armorforge.5",
+      "name": "§e五阶防具锻核[森林]",
+      "lore": [
+        "§e稀有度:★★★★★",
+        "§7§o经过加工的防具锻核",
+        "§7§o适合用作锻造五阶防具"
+      ]
+    },
+    "east.magicforge.5": {
+      "material": "diamond",
+      "model": "materials/magicforge.5",
+      "name": "§e五阶法宝锻核[森林]",
+      "lore": [
+        "§e稀有度:★★★★★",
+        "§7§o经过加工的法宝锻核",
+        "§7§o适合用作锻造五阶法宝"
+      ]
+    },
+    "south.weaponforge.5": {
+      "material": "diamond",
+      "model": "materials/weaponforge.5",
+      "name": "§e五阶武器锻核[沙漠]",
+      "lore": [
+        "§e稀有度:★★★★★",
+        "§7§o经过加工的武器锻核",
+        "§7§o适合用作锻造五阶武器"
+      ]
+    },
+    "south.armorforge.5": {
+      "material": "diamond",
+      "model": "materials/armorforge.5",
+      "name": "§e五阶防具锻核[沙漠]",
+      "lore": [
+        "§e稀有度:★★★★★",
+        "§7§o经过加工的防具锻核",
+        "§7§o适合用作锻造五阶防具"
+      ]
+    },
+    "south.magicforge.5": {
+      "material": "diamond",
+      "model": "materials/magicforge.5",
+      "name": "§e五阶法宝锻核[沙漠]",
+      "lore": [
+        "§e稀有度:★★★★★",
+        "§7§o经过加工的法宝锻核",
+        "§7§o适合用作锻造五阶法宝"
+      ]
+    },
+    "west.weaponforge.5": {
+      "material": "diamond",
+      "model": "materials/weaponforge.5",
+      "name": "§e五阶武器锻核[雪山]",
+      "lore": [
+        "§e稀有度:★★★★★",
+        "§7§o经过加工的武器锻核",
+        "§7§o适合用作锻造五阶武器"
+      ]
+    },
+    "west.armorforge.5": {
+      "material": "diamond",
+      "model": "materials/armorforge.5",
+      "name": "§e五阶防具锻核[雪山]",
+      "lore": [
+        "§e稀有度:★★★★★",
+        "§7§o经过加工的防具锻核",
+        "§7§o适合用作锻造五阶防具"
+      ]
+    },
+    "west.magicforge.5": {
+      "material": "diamond",
+      "model": "materials/magicforge.5",
+      "name": "§e五阶法宝锻核[雪山]",
+      "lore": [
+        "§e稀有度:★★★★★",
+        "§7§o经过加工的法宝锻核",
+        "§7§o适合用作锻造五阶法宝"
+      ]
+    },
+    "north.weaponforge.5": {
+      "material": "diamond",
+      "model": "materials/weaponforge.5",
+      "name": "§e五阶武器锻核[湖泊]",
+      "lore": [
+        "§e稀有度:★★★★★",
+        "§7§o经过加工的武器锻核",
+        "§7§o适合用作锻造五阶武器"
+      ]
+    },
+    "north.armorforge.5": {
+      "material": "diamond",
+      "model": "materials/armorforge.5",
+      "name": "§e五阶防具锻核[湖泊]",
+      "lore": [
+        "§e稀有度:★★★★★",
+        "§7§o经过加工的防具锻核",
+        "§7§o适合用作锻造五阶防具"
+      ]
+    },
+    "north.magicforge.5": {
+      "material": "diamond",
+      "model": "materials/magicforge.5",
+      "name": "§e五阶法宝锻核[湖泊]",
+      "lore": [
+        "§e稀有度:★★★★★",
+        "§7§o经过加工的法宝锻核",
+        "§7§o适合用作锻造五阶法宝"
+      ]
+    }
+  },
+  "others": {
+    "money0": {
+      "material": "resin_clump",
+      "name": "§f铜钱"
+    },
+    "money1": {
+      "material": "resin_clump",
+      "name": "§a金元宝"
+    },
+    "money2": {
+      "material": "resin_clump",
+      "name": "§9银票"
+    },
+    "money3": {
+      "material": "resin_clump",
+      "name": "§d金券"
+    },
+    "money4": {
+      "material": "resin_clump",
+      "name": "§e宝钞"
+    },
+    "element.metal": {
+      "material": "nether_wart",
+      "name": "§f金元素"
+    },
+    "element.wood": {
+      "material": "nether_wart",
+      "name": "§f木元素"
+    },
+    "element.water": {
+      "material": "nether_wart",
+      "name": "§f水元素"
+    },
+    "element.lava": {
+      "material": "nether_wart",
+      "name": "§f火元素"
+    },
+    "element.earth": {
+      "material": "nether_wart",
+      "name": "§f土元素"
+    },
+    "refined.metal": {
+      "material": "nether_wart",
+      "name": "§b精炼金元素"
+    },
+    "refined.wood": {
+      "material": "nether_wart",
+      "name": "§b精炼木元素"
+    },
+    "refined.water": {
+      "material": "nether_wart",
+      "name": "§b精炼水元素"
+    },
+    "refined.lava": {
+      "material": "nether_wart",
+      "name": "§b精炼火元素"
+    },
+    "refined.earth": {
+      "material": "nether_wart",
+      "name": "§b精炼土元素"
+    },
+    "advanced.metal": {
+      "material": "nether_wart",
+      "name": "§6浓缩金元素"
+    },
+    "advanced.wood": {
+      "material": "nether_wart",
+      "name": "§6浓缩木元素"
+    },
+    "advanced.water": {
+      "material": "nether_wart",
+      "name": "§6浓缩水元素"
+    },
+    "advanced.lava": {
+      "material": "nether_wart",
+      "name": "§6浓缩火元素"
+    },
+    "advanced.earth": {
+      "material": "nether_wart",
+      "name": "§6浓缩土元素"
+    },
+    "west.goods.2": {
+      "material": "brick",
+      "name": "§a魔化妖丹"
+    },
+    "west.goods.3": {
+      "material": "brick",
+      "name": "§9蕴灵树皮"
+    },
+    "west.goods.4": {
+      "material": "brick",
+      "name": "§d山神庙的贡品"
+    },
+    "south.goods.2": {
+      "material": "brick",
+      "name": "§a王员外的货物"
+    },
+    "south.goods.3": {
+      "material": "brick",
+      "name": "§9阵法石碎片"
+    },
+    "south.goods.4": {
+      "material": "brick",
+      "name": "§d篆元上仙的文献"
+    },
+    "east.goods.2": {
+      "material": "brick",
+      "name": "§a陈大夫的草药束"
+    },
+    "east.goods.3": {
+      "material": "brick",
+      "name": "§9虎爪碎金"
+    },
+    "east.goods.4": {
+      "material": "brick",
+      "name": "§d虎灵冰晶"
+    },
+    "north.goods.2": {
+      "material": "brick",
+      "name": "§a洄游祭的祭品"
+    },
+    "north.goods.3": {
+      "material": "brick",
+      "name": "§9金乌落羽"
+    },
+    "north.goods.4": {
+      "material": "brick",
+      "name": "§d缠怨布"
+    }
+  }
+}

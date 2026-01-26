@@ -1,0 +1,289 @@
+{
+  "weapons": {
+    "sword1": {
+      "material": "NETHERITE_SWORD",
+      "name": "§f桃木剑"
+    },
+    "bow1": {
+      "material": "BOW",
+      "name": "§f桃木弓"
+    },
+    "furnace1": {
+      "material": "resin_brick",
+      "name": "§f黑铁锅"
+    },
+    "sword20": {
+      "material": "NETHERITE_SWORD",
+      "name": "§a青铜剑[金钟]"
+    },
+    "sword21": {
+      "material": "NETHERITE_SWORD",
+      "name": "§a开山刀[破军]"
+    },
+    "sword22": {
+      "material": "NETHERITE_SWORD",
+      "name": "§a穿林矛[探云]"
+    },
+    "sword23": {
+      "material": "NETHERITE_SWORD",
+      "name": "§a斫岩斧[撼岳]"
+    },
+    "bow20": {
+      "material": "BOW",
+      "name": "§a青铜弓[狙击]"
+    },
+    "bow21": {
+      "material": "crossbow",
+      "name": "§a黑铁弩[游侠]"
+    },
+    "bow22": {
+      "material": "bow",
+      "name": "§a玄水弓[灵箭]"
+    },
+    "bow23": {
+      "material": "crossbow",
+      "name": "§a飞叶弩[穿星]"
+    },
+    "furnace2": {
+      "material": "resin_brick",
+      "name": "§a青铜锅"
+    },
+    "sword30": {
+      "material": "NETHERITE_SWORD",
+      "name": "§9赤铜剑[金钟]"
+    },
+    "sword31": {
+      "material": "NETHERITE_SWORD",
+      "name": "§9巨铜战锤[破军]"
+    },
+    "sword32": {
+      "material": "NETHERITE_SWORD",
+      "name": "§9红缨枪[探云]"
+    },
+    "sword33": {
+      "material": "NETHERITE_SWORD",
+      "name": "§9金焰钧[撼岳]"
+    },
+    "bow30": {
+      "material": "BOW",
+      "name": "§9焰铁弓[狙击]"
+    },
+    "bow31": {
+      "material": "crossbow",
+      "name": "§9红翎弩[游侠]"
+    },
+    "bow32": {
+      "material": "bow",
+      "name": "§9烈日弓[灵箭]"
+    },
+    "bow33": {
+      "material": "crossbow",
+      "name": "§9妖灵弩[穿星]"
+    },
+    "furnace3": {
+      "material": "resin_brick",
+      "name": "§9炼丹炉"
+    },
+    "sword40": {
+      "material": "NETHERITE_SWORD",
+      "name": "§d太极剑[金钟]"
+    },
+    "sword41": {
+      "material": "NETHERITE_SWORD",
+      "name": "§d破空斧[破军]"
+    },
+    "sword42": {
+      "material": "NETHERITE_SWORD",
+      "name": "§d冰晶槊[探云]"
+    },
+    "sword43": {
+      "material": "NETHERITE_SWORD",
+      "name": "§d镇魂斨[撼岳]"
+    },
+    "bow40": {
+      "material": "BOW",
+      "name": "§d重锤弓[狙击]"
+    },
+    "bow41": {
+      "material": "crossbow",
+      "name": "§d蛟龙弩[游侠]"
+    },
+    "bow42": {
+      "material": "bow",
+      "name": "§d幽魂弓[灵箭]"
+    },
+    "bow43": {
+      "material": "crossbow",
+      "name": "§d游龙弩[穿星]"
+    },
+    "furnace4": {
+      "material": "resin_brick",
+      "name": "§d锁魂炉"
+    },
+    "sword50": {
+      "material": "NETHERITE_SWORD",
+      "name": "§e昆仑飞仙剑[金钟]"
+    },
+    "sword51": {
+      "material": "NETHERITE_SWORD",
+      "name": "§e三宝玉如意[破军]"
+    },
+    "sword52": {
+      "material": "NETHERITE_SWORD",
+      "name": "§e龙吟贯天戟[探云]"
+    },
+    "sword53": {
+      "material": "NETHERITE_SWORD",
+      "name": "§e玄钢震地钺[撼岳]"
+    },
+    "bow50": {
+      "material": "BOW",
+      "name": "§e北斗灭神弓[狙击]"
+    },
+    "bow51": {
+      "material": "crossbow",
+      "name": "§e日月流星弩[游侠]"
+    },
+    "bow52": {
+      "material": "bow",
+      "name": "§e辉光曜阳弓[灵箭]"
+    },
+    "bow53": {
+      "material": "crossbow",
+      "name": "§e瀚宇星海弩[穿星]"
+    },
+    "furnace5": {
+      "material": "resin_brick",
+      "name": "§d七煞鼎"
+    },
+    "sword60": {
+      "material": "NETHERITE_SWORD",
+      "name": "§e诛仙[金钟]"
+    },
+    "sword61": {
+      "material": "NETHERITE_SWORD",
+      "name": "§c玉琮[破军]"
+    },
+    "sword62": {
+      "material": "NETHERITE_SWORD",
+      "name": "§c戈铤[探云]"
+    },
+    "sword63": {
+      "material": "NETHERITE_SWORD",
+      "name": "§c开天[撼岳]"
+    },
+    "bow60": {
+      "material": "BOW",
+      "name": "§c腾蛟起凤[狙击]"
+    },
+    "bow61": {
+      "material": "crossbow",
+      "name": "§c雁阵惊寒[游侠]"
+    },
+    "bow62": {
+      "material": "bow",
+      "name": "§c邺水朱华[灵箭]"
+    },
+    "bow63": {
+      "material": "crossbow",
+      "name": "§c舸舰弥津[穿星]"
+    },
+    "furnace6": {
+      "material": "resin_brick",
+      "name": "§c亘古磐岩"
+    },
+    "legendsword60": {
+      "material": "NETHERITE_SWORD",
+      "name": "§c如意金箍棒[金钟]",
+      "model": "weapons/legendsword6"
+    },
+    "legendsword61": {
+      "material": "NETHERITE_SWORD",
+      "name": "§c如意金箍棒[破军]",
+      "model": "weapons/legendsword6",
+      "lore": [
+        "§c稀有度:★★★★★★      品质:[传说]",
+        "§6限制职业:[战]      限制等级:60",
+        "§7§o传说中齐天大圣孙悟空所使用的兵器",
+        "§7§o为太上老君所定制的「定海神珍铁」",
+        "§7§o重达一万三千五百斤，可自由变换长短大小",
+        "§7§o大禹治水后遗留在东海，后被孙悟空取走",
+        "§7==========§2§l§n武器属性§7==========",
+        "§f进攻属性 +60   进攻属性 +30%",
+        "§f攻击速度 +4",
+        "§7==========§2§l§n武器特性§7==========",
+        "§b[破军] 移动速度 +30%",
+        "§7==========§2§l§n武器技能§7==========",
+        "§c[万钧斩]",
+        "§e[右键] §f冷却: §b5§f秒",
+        "§f下一次攻击对目标额外造成§b500%§f进攻属性的伤害",
+        "§c[齐天-斗战]",
+        "§e[下蹲+右键] §f冷却: §b30§f秒",
+        "§f进入§c[斗战]§f状态: 额外获得§b30%§f进攻属性，持续§b10§f秒",
+        "§f状态持续期间，每次击杀敌人都会使接下来§b2§f秒内移动速度增加§b30%",
+        "§f在这§b2§f秒内，可以通过§e[跳跃+下蹲]§f进行一次翻滚，向前方移动§b2§f格",
+        "§f该效果不可叠加，但每次击杀可重置持续时间",
+        "§7==========§2§l§n强化属性§7==========",
+        "§a[附灵]§7可使用[叁阶]及以下的附灵石附灵",
+        "§c激活位 [一]"
+      ],
+      "attributes": {
+        "attackbase": 60.0,
+        "healthbase": 10.0,
+        "armorbase": 10.0,
+        "attackpers": 30.0,
+        "healthpers": 0.0,
+        "armorpers": 0.0,
+        "attackspeed": 0.0,
+        "speed": 30.0,
+        "enableslot": 0.0,
+        "levellimit": 60.0,
+        "joblimit": 0.0,
+        "enchantlevel": 3.0
+      }
+    },
+    "legendsword62": {
+      "material": "NETHERITE_SWORD",
+      "name": "§c如意金箍棒[探云]",
+      "model": "weapons/legendsword6"
+    },
+    "legendsword63": {
+      "material": "NETHERITE_SWORD",
+      "name": "§c如意金箍棒[撼岳]",
+      "model": "weapons/legendsword6"
+    },
+    "legendbow60": {
+      "material": "BOW",
+      "name": "§c逐日[狙击]",
+      "model": "weapons/legendbow6",
+      "attributes": {
+        "enableslot": 1.0,
+        "levellimit": 60.0,
+        "joblimit": 0,
+        "enchantlevel": 3.0
+      }
+    },
+    "legendbow61": {
+      "material": "crossbow",
+      "name": "§c逐日[游侠]",
+      "model": "weapons/legendbow6"
+    },
+    "legendbow62": {
+      "material": "bow",
+      "name": "§c逐日[灵箭]",
+      "model": "weapons/legendbow6"
+    },
+    "legendbow63": {
+      "material": "crossbow",
+      "name": "§c逐日[穿星]",
+      "model": "weapons/legendbow6"
+    },
+    "legendfurnace6": {
+      "material": "resin_brick",
+      "name": "§c混元神鼎"
+    }
+  },
+  "magicweapons": {
+
+  }
+}
