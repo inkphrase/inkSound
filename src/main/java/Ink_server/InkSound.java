@@ -1,5 +1,7 @@
 package Ink_server;
 
+import Ink_server.EconomySystem.DeliveryStation;
+import Ink_server.EconomySystem.GlobalData;
 import Ink_server.Forge.ForgeTable;
 import Ink_server.Forge.Recipe;
 import Ink_server.InkSoundEvents.PlayerUseElementEventCaller;
@@ -172,6 +174,10 @@ public final class InkSound extends JavaPlugin {
         //注册自定义刷怪笼
         MonsterSpawner.init();
 
+        //注册并写入跑商等全局时间戳
+        DeliveryStation.init();
+        GlobalData.load();
+
         //开启定时器任务 一定放在最后！！！
         tickTimer = new TickTimer();
 
@@ -217,6 +223,8 @@ public final class InkSound extends JavaPlugin {
         getHouse.save();
         //保存交易项
         villagerTradeManager.save();
+        //保存跑商等全局时间戳
+        GlobalData.save();
     }
 
     public void loadLibData() {

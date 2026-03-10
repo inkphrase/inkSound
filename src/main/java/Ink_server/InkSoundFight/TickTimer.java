@@ -1,10 +1,15 @@
 package Ink_server.InkSoundFight;
 
+import Ink_server.EconomySystem.AdventureAssociation;
+import Ink_server.EconomySystem.DeliveryStation;
+import Ink_server.EconomySystem.GlobalData;
 import Ink_server.EnableCheck.AttributeCal;
 import Ink_server.EntityTempData.*;
 import Ink_server.InkSound;
 import Ink_server.StaticDatas.Factions;
 import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.format.NamedTextColor;
+import net.kyori.adventure.text.format.TextDecoration;
 import org.bukkit.Bukkit;
 import org.bukkit.Sound;
 import org.bukkit.World;
@@ -38,6 +43,50 @@ public class TickTimer {
         cleanCount++;
         int currentTick = Bukkit.getCurrentTick();
         long startTime = System.currentTimeMillis();
+        Boolean shouldUpdateDelivery = DeliveryStation.shouldUpdate();
+        Boolean shouldUpdateAdventure = AdventureAssociation.shouldUpdate();
+        String time = GlobalData.getDay() + " " + GlobalData.getHour();
+        if (shouldUpdateDelivery){
+            plugin.getLogger().info("跑商更新，时间：" + currentTick);
+            plugin.getServer().broadcast(Component.text("=================")
+                                         .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false)
+                                 .append(Component.text("皇城镖局")
+                                         .color(NamedTextColor.GOLD).decoration(TextDecoration.BOLD, true).decoration(TextDecoration.ITALIC,false))
+                                 .append(Component.text("=================")
+                                         .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false))
+                    .append(Component.newline())
+                                 .append(Component.text("乾坤流转，万象更新。商贸之事，民生之本。")
+                                         .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false))
+                    .append(Component.newline())
+                                 .append(Component.text("然四海商路多不平。艰难险阻，路途崎岖。")
+                                         .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false))
+                    .append(Component.newline())
+                                 .append(Component.text("崇山峻岭，常有狰狞妖物环伺，辎重难输。")
+                                         .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false))
+                    .append(Component.newline())
+                                 .append(Component.text("怪石嶙峋，各地州府民生凋敝，积货难运。")
+                                         .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false))
+                    .append(Component.newline())
+                                 .append(Component.text("兹尔皇城镖局，承押送之委托，利万民之生计。")
+                                         .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false))
+                    .append(Component.newline())
+                                 .append(Component.text("今特发此榜，号召天下身手不凡之游侠志士。")
+                                         .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false))
+                    .append(Component.newline())
+                                 .append(Component.text("凡能护送货物平安抵境者，加官进爵，重金酬谢！")
+                                         .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false))
+                    .append(Component.newline())
+                                 .append(Component.text("险峻之道，方查民生困苦；危难之际，方显英雄本色！")
+                                         .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false))
+                    .append(Component.newline())
+                                 .append(Component.text("皇城镖局 " + time + " 宣")
+                                         .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false))
+                    .append(Component.newline())
+                                 .append(Component.text("========================================")
+                                         .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false))
+
+            );
+        }
         World mainWorld = Bukkit.getWorld("world");
         if (mainWorld == null) return;
         for (LivingEntity entity : mainWorld.getLivingEntities()) {
@@ -66,6 +115,13 @@ public class TickTimer {
                             if (msg != null) player.sendActionBar(msg);
                         }
                     }
+                }
+                //这里更新跑商的时间
+                if (shouldUpdateDelivery){
+                    DeliveryStation.deliveryUpdate(player);
+                }
+                if (shouldUpdateAdventure){
+                    AdventureAssociation.adventureUpdate(player);
                 }
             }
             dataUpdate(entity, entityData);

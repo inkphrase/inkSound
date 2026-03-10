@@ -1,6 +1,5 @@
 package Ink_server.InkSoundFight;
 
-
 import Ink_server.EntityTempData.DotEffect;
 import Ink_server.EntityTempData.EntityData;
 import Ink_server.EntityTempData.EntityDataManager;

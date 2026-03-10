@@ -23,6 +23,12 @@ public class PlayerInfo {
     //击杀数
     private int killNum = 0;
 
+    //跑商、委托更新时间戳
+    private long deliveryUpdatePeriod = 0;
+    private int delivertyTimes = 0;
+    private long adventureUpdatePeriod = 0;
+    private long adventureTimes = 0;
+
     private final Map<String, Integer> restCooldownMap = new ConcurrentHashMap<>();
 
     // --- Boolean 类型通常使用 'is' 而非 'get' ---
@@ -101,5 +107,37 @@ public class PlayerInfo {
 
     public void setTalented() {
         talent = true;
+    }
+
+    public long getDeliveryUpdatePeriod() {
+        return deliveryUpdatePeriod;
+    }
+
+    public  void setDeliveryUpdatePeriod(long deliveryUpdatePeriod) {
+        this.deliveryUpdatePeriod = deliveryUpdatePeriod;
+    }
+
+    public int getDelivertyTimes() {
+        return delivertyTimes;
+    }
+
+    public void setDelivertyTimes(int delivertyTimes) {
+        this.delivertyTimes = delivertyTimes;
+    }
+
+    public long getAdventureUpdatePeriod() {
+        return adventureUpdatePeriod;
+    }
+
+    public  void setAdventureUpdatePeriod(long adventureUpdatePeriod) {
+        this.adventureUpdatePeriod = adventureUpdatePeriod;
+    }
+
+    public long getAdventureTimes() {
+        return adventureTimes;
+    }
+
+    public void setAdventureTimes(long adventureTimes) {
+        this.adventureTimes = adventureTimes;
     }
 }
