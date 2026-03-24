@@ -45,47 +45,8 @@ public class TickTimer {
         long startTime = System.currentTimeMillis();
         Boolean shouldUpdateDelivery = DeliveryStation.shouldUpdate();
         Boolean shouldUpdateAdventure = AdventureAssociation.shouldUpdate();
-        String time = GlobalData.getDay() + " " + GlobalData.getHour();
         if (shouldUpdateDelivery){
-            plugin.getLogger().info("跑商更新，时间：" + currentTick);
-            plugin.getServer().broadcast(Component.text("=================")
-                                         .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false)
-                                 .append(Component.text("皇城镖局")
-                                         .color(NamedTextColor.GOLD).decoration(TextDecoration.BOLD, true).decoration(TextDecoration.ITALIC,false))
-                                 .append(Component.text("=================")
-                                         .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false))
-                    .append(Component.newline())
-                                 .append(Component.text("乾坤流转，万象更新。商贸之事，民生之本。")
-                                         .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false))
-                    .append(Component.newline())
-                                 .append(Component.text("然四海商路多不平。艰难险阻，路途崎岖。")
-                                         .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false))
-                    .append(Component.newline())
-                                 .append(Component.text("崇山峻岭，常有狰狞妖物环伺，辎重难输。")
-                                         .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false))
-                    .append(Component.newline())
-                                 .append(Component.text("怪石嶙峋，各地州府民生凋敝，积货难运。")
-                                         .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false))
-                    .append(Component.newline())
-                                 .append(Component.text("兹尔皇城镖局，承押送之委托，利万民之生计。")
-                                         .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false))
-                    .append(Component.newline())
-                                 .append(Component.text("今特发此榜，号召天下身手不凡之游侠志士。")
-                                         .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false))
-                    .append(Component.newline())
-                                 .append(Component.text("凡能护送货物平安抵境者，加官进爵，重金酬谢！")
-                                         .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false))
-                    .append(Component.newline())
-                                 .append(Component.text("险峻之道，方查民生困苦；危难之际，方显英雄本色！")
-                                         .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false))
-                    .append(Component.newline())
-                                 .append(Component.text("皇城镖局 " + time + " 宣")
-                                         .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false))
-                    .append(Component.newline())
-                                 .append(Component.text("========================================")
-                                         .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false))
-
-            );
+            deliveryAnnouncement(currentTick);
         }
         World mainWorld = Bukkit.getWorld("world");
         if (mainWorld == null) return;
@@ -326,6 +287,50 @@ public class TickTimer {
     public static boolean isCombatant(LivingEntity entity) {
         if (entity instanceof Player) return true;
         return EntityDataManager.hasData(entity.getUniqueId());
+    }
+
+    public static void deliveryAnnouncement(long currentTick)
+    {
+        String time = GlobalData.getDay() + " " + GlobalData.getHour();
+        plugin.getLogger().info("跑商更新，时间：" + currentTick);
+        plugin.getServer().broadcast(Component.text("=================")
+                .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false)
+                .append(Component.text("皇城镖局")
+                        .color(NamedTextColor.GOLD).decoration(TextDecoration.BOLD, true).decoration(TextDecoration.ITALIC,false))
+                .append(Component.text("=================")
+                        .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false))
+                .append(Component.newline())
+                .append(Component.text("乾坤流转，万象更新。商贸之事，民生之本。")
+                        .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false))
+                .append(Component.newline())
+                .append(Component.text("然四海商路多不平。艰难险阻，路途崎岖。")
+                        .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false))
+                .append(Component.newline())
+                .append(Component.text("崇山峻岭，常有狰狞妖物环伺，辎重难输。")
+                        .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false))
+                .append(Component.newline())
+                .append(Component.text("怪石嶙峋，各地州府民生凋敝，积货难运。")
+                        .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false))
+                .append(Component.newline())
+                .append(Component.text("兹尔皇城镖局，承押送之委托，利万民之生计。")
+                        .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false))
+                .append(Component.newline())
+                .append(Component.text("今特发此榜，号召天下身手不凡之游侠志士。")
+                        .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false))
+                .append(Component.newline())
+                .append(Component.text("凡能护送货物平安抵境者，加官进爵，重金酬谢！")
+                        .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false))
+                .append(Component.newline())
+                .append(Component.text("险峻之道，方查民生困苦；危难之际，方显英雄本色！")
+                        .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false))
+                .append(Component.newline())
+                .append(Component.text("皇城镖局 " + time + " 宣")
+                        .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false))
+                .append(Component.newline())
+                .append(Component.text("========================================")
+                        .color(NamedTextColor.GRAY).decoration(TextDecoration.ITALIC,false))
+
+        );
     }
 }
 

@@ -107,14 +107,14 @@ public class GlobalData {
         String TIANGGAN = TIANGANs[(year - 1984) % 10];
         String DIZHI = DIZHIs[(year - 1984) % 12];
         String yearOut = TIANGGAN + DIZHI + "年";
-        String monthOut = months[month-1];
+        String monthOut = months[month-1] + "月";
         int dayCheck0 = dayOfMonth % 10;
         int dayCheck1 = dayOfMonth / 10;
         String dayOut;
         if (dayCheck0 == 0){
             if (dayCheck1 == 1){
                 dayOut = "初十";
-            }else dayOut = numbers[dayCheck1-1] + "拾";
+            }else dayOut = numbers[dayCheck1-1] + "十";
         }else {
             dayOut = tens[dayCheck1] +numbers[dayCheck0-1];
         }
