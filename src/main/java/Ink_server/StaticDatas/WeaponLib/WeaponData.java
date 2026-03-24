@@ -3,10 +3,7 @@ package Ink_server.StaticDatas.WeaponLib;
 import net.kyori.adventure.text.Component;
 import org.bukkit.Material;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class WeaponData {
     //设置所需物品数据
@@ -16,6 +13,8 @@ public class WeaponData {
     private final String model;
     private final List<Component> lore;
     private final Map<String, Double> attributes = new HashMap<>();
+    private final Set<String> armorSkills = new HashSet<>();
+    private final Set<String> seriesSkills = new HashSet<>();
     //初始化物品属性名常量
     //攻击生命护甲
     public static final String ATTACKBASE = "attackbase";
@@ -43,6 +42,10 @@ public class WeaponData {
     public static final String JOBLIMIT = "joblimit";
     public static final String ENCHANTLEVEL = "enchantlevel";
 
+    //初始化技能属性
+    public static final String ARMORSKILL = "armorskill";
+    public static final String SEIRESSKILL = "seiresskill";
+
     //仅弓箭手，穿透数目
     public static final String PIERCE = "pierce";
 
@@ -53,6 +56,8 @@ public class WeaponData {
     public void setAttribute(String key, double num){
         attributes.put(key,num);
     }
+    public void setArmorSkills(String id){armorSkills.add(id);}
+    public void setSeriesSkills(String id){seriesSkills.add(id);}
     //获取物品数据
     public String getId() {return id;}
     public Material getMaterial() {return material;}
@@ -60,4 +65,6 @@ public class WeaponData {
     public String getModel() {return model;}
     public List<Component> getLore() {return lore;}
     public Map<String, Double> getAttributes() {return Collections.unmodifiableMap(attributes);}
+    public Set<String> getArmorSkills() {return Collections.unmodifiableSet(armorSkills);}
+    public Set<String> getSeriesSkills() {return Collections.unmodifiableSet(seriesSkills);}
 }
