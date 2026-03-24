@@ -1,6 +1,5 @@
 package Ink_server.EnableCheck;
 
-import Ink_server.EntityTempData.EntityDataManager;
 import Ink_server.StaticDatas.PlayerInformance.PlayerInfoManager;
 import Ink_server.StaticDatas.WeaponLib.WeaponData;
 import Ink_server.StaticDatas.WeaponLib.WeaponManager;
@@ -46,6 +45,7 @@ public class ItemCheck {
             doCheck(player, i, item, meta, pdc, weaponData.getAttributes());
         }
         AttributeCal.setSlotData(player);
+        SkillCheck.skillUpdate(player);
         if (player.isOp()){
             player.sendMessage("执行遍历激活！");
         }
@@ -102,43 +102,43 @@ public class ItemCheck {
         //newstack不可激活时，检查oldstack，old已激活时立即计算数值，old未激活或不可激活时直接拦截
         if (item == null || !item.hasItemMeta()) {
             oldCheck(player, oldMeta,i);
-            SkillCheck.SlotSkillCheck(i, EntityDataManager.getData(player), item);
+            SkillCheck.skillUpdate(player);
             return;
         }
         var meta = item.getItemMeta();
         if (meta == null) {
             oldCheck(player, oldMeta,i);
-            SkillCheck.SlotSkillCheck(i, EntityDataManager.getData(player), item);
+            SkillCheck.skillUpdate(player);
             return;
         }
         var pdc = meta.getPersistentDataContainer();
         String newId = pdc.get(id, PersistentDataType.STRING);
         if (newId == null) {
             oldCheck(player, oldMeta,i);
-            SkillCheck.SlotSkillCheck(i, EntityDataManager.getData(player), item);
+            SkillCheck.skillUpdate(player);
             return;
         }
         WeaponData weaponData = WeaponManager.getWeaponLib().get(newId);
         if (weaponData == null) {
             oldCheck(player, oldMeta,i);
-            SkillCheck.SlotSkillCheck(i, EntityDataManager.getData(player), item);
+            SkillCheck.skillUpdate(player);
             return;
         }
         Map<String, Double> attributes = weaponData.getAttributes();
         if (attributes == null || !attributes.containsKey(WeaponData.ENABLESLOT)){
             oldCheck(player, oldMeta,i);
-            SkillCheck.SlotSkillCheck(i, EntityDataManager.getData(player), item);
+            SkillCheck.skillUpdate(player);
             return;
         }
         //在激活位时设置物品为激活
         if (!doCheck(player, i, item, meta, pdc, attributes)) {
             //无论新物品是否需要进行激活更改，都需要检测一次旧物品
             oldCheck(player, oldMeta,i);
-            SkillCheck.SlotSkillCheck(i, EntityDataManager.getData(player), item);
+            SkillCheck.skillUpdate(player);
             return;
         }
         AttributeCal.setSlotData(player);
-        SkillCheck.SlotSkillCheck(i, EntityDataManager.getData(player), item);
+        SkillCheck.skillUpdate(player);
         if (player.isOp()){
             player.sendMessage("执行对槽位激活！");
         }
