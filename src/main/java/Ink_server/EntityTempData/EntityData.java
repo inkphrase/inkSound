@@ -1,6 +1,8 @@
 package Ink_server.EntityTempData;
 
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class EntityData {
@@ -33,6 +35,9 @@ public class EntityData {
     public Map<String, BuffEffect> buffEffectMap = new ConcurrentHashMap<>();
     public Map<String, DotEffect> dotEffectMap = new ConcurrentHashMap<>();
     public Map<String, Skills> skillsMap = new ConcurrentHashMap<>();
+
+    //装备被动技能
+    private Set<String> armorSkills = new HashSet<>();
 
     //这里记录了一些天赋、技能等所需的标记等变量，初始化时为0或空，使用技能时赋值
 
@@ -77,6 +82,13 @@ public class EntityData {
 
     public void setSkillsMap(String id, Skills skills) {
         skillsMap.put(id, skills);
+    }
+
+    public Set<String> getArmorSkills() {
+        return armorSkills;
+    }
+    public void setArmorSkills(Set<String> armorSkills) {
+        this.armorSkills = armorSkills;
     }
 
     //最终战斗数据的getter
