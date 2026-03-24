@@ -1,45 +1,73 @@
 package Ink_server.EnableCheck;
 
 import Ink_server.EntityTempData.EntityData;
-import Ink_server.EntityTempData.Skills;
+import Ink_server.EntityTempData.EntityDataManager;
 import Ink_server.StaticDatas.ItemKeys;
-import Ink_server.StaticDatas.WeaponLib.WeaponRegistry;
+import Ink_server.StaticDatas.WeaponLib.WeaponData;
+import Ink_server.StaticDatas.WeaponLib.WeaponManager;
+import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.persistence.PersistentDataType;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
-/**
- * 此类集成了所有被动技能的激活重检测
- */
 public class SkillCheck {
-    private static final Set<String> slot0Skills = new HashSet<>();
+    //这里定义实例中用于统计玩家技能的变量
+    public final Map<String, Integer> seriesCount = new HashMap<>();
+    public final Set<String> armorSkills = new HashSet<>();
+    public Player player;
 
-    static {
+    public SkillCheck(Player player) {
+        this.player = player;
     }
 
-    //这里检查某个槽位的技能
-    public static void SlotSkillCheck(int i, EntityData entityData, ItemStack item){
-        switch (i){
-            case 0 -> handleSlot0(entityData, item);
+    //这里进行统计与实际激活
+    public void doCount() {
+        Player player = this.player;
+        for (int i : AttributeCal.slots){
+            ItemStack item = player.getInventory().getItem(i);
+            if (item == null || !item.hasItemMeta()) continue;
+            ItemMeta meta = item.getItemMeta();
+            if (meta == null) continue;
+            var pdc = meta.getPersistentDataContainer();
+            String id = pdc.get(ItemKeys.ID, PersistentDataType.STRING);
+            if (id == null) continue;
+            WeaponData weaponData = WeaponManager.getWeaponLib().get(id);
+            Set<String> weaponArmorSkills = weaponData.getArmorSkills();
+            Set<String> weaponSeriesSkills = weaponData.getSeriesSkills();
+            this.armorSkills.addAll(weaponArmorSkills);
+            for (String seriesSkillID : weaponSeriesSkills){
+                this.seriesCount.put(seriesSkillID, this.seriesCount.getOrDefault(seriesSkillID, 0) + 1);
+            }
         }
+        for(String seriesSkillID : this.seriesCount.keySet()){
+            SkillsOnArmor.SeriesCheck seriesCheck = SkillsOnArmor.SeriesCheck.getById(seriesSkillID);
+            if (seriesCheck == null) continue;
+            seriesCheck.check(this, seriesSkillID);
+        }
+        EntityData playerData = EntityDataManager.getData(player);
+        var recentArmorSkills = playerData.getArmorSkills();
+        Set<String> shouldDisable = new HashSet<>(recentArmorSkills);
+        shouldDisable.removeAll(this.armorSkills);
+        Set<String> shouldEnable = new HashSet<>(this.armorSkills);
+        shouldEnable.removeAll(recentArmorSkills);
+        for (String disabledSkillID : shouldDisable){
+            SkillsOnArmor skillsOnArmor = SkillsOnArmor.getById(disabledSkillID);
+            if (skillsOnArmor == null) continue;
+            skillsOnArmor.disable(player);
+        }
+        for (String enabledSkillID : shouldEnable){
+            SkillsOnArmor skillsOnArmor = SkillsOnArmor.getById(enabledSkillID);
+            if (skillsOnArmor == null) continue;
+            skillsOnArmor.enable(player);
+        }
+        playerData.setArmorSkills(this.armorSkills);
     }
 
-    //这里检查一号位
-    private static void handleSlot0(EntityData entityData, ItemStack item){
-        if (item == null || entityData == null) return;
-        ItemMeta meta = item.getItemMeta();
-        if (meta == null) {
-            return;
-        }
-        var pdc = meta.getPersistentDataContainer();
-        String id = pdc.get(ItemKeys.ID, PersistentDataType.STRING);
+    public static void skillUpdate(Player player){
+        SkillCheck skillCheck = new SkillCheck(player);
+        skillCheck.doCount();
     }
 
-    private static void clearSlot0(EntityData entityData){
-        for (String s : slot0Skills) {
-        }
-    }
 }
