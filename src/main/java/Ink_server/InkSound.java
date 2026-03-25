@@ -41,7 +41,7 @@ import Ink_server.EnableCheck.EnableEventsListener;
 
 import java.util.Objects;
 
-
+//上次更新：2026.3.25，增加装备被动技能与套装效果的检查
 public final class InkSound extends JavaPlugin {
     private static InkSound instance;
     private RecipeDisabler recipeDisabler;
