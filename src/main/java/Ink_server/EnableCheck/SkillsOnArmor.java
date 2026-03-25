@@ -38,6 +38,7 @@ public enum SkillsOnArmor {
 
     public abstract void disable(Player player);
 
+    //内部枚举，判断套装效果是否触发
     public enum SeriesCheck{
         EAST_2_0("east20"){
             @Override
